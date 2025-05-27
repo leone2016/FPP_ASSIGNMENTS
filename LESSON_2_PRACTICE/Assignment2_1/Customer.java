@@ -4,10 +4,10 @@ public class Customer {
     private String firstName;
     private String lastName;
     private String socSecurityNum;
-    private String billingAddress;
-    private String shippingAddress;
+    private Address billingAddress;
+    private Address shippingAddress;
 
-    public Customer(String firstName, String lastName, String socSecurityNum, String billingAddress, String shippingAddress) {
+    public Customer(String firstName, String lastName, String socSecurityNum, Address billingAddress, Address shippingAddress) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.socSecurityNum = socSecurityNum;
@@ -24,10 +24,10 @@ public class Customer {
     public String getSocSecurityNum() {
         return socSecurityNum;
     }
-    public String getBillingAddress() {
+    public Address getBillingAddress() {
         return billingAddress;
     }
-    public String getShippingAddress() {
+    public Address getShippingAddress() {
         return shippingAddress;
     }
     public void setFirstName(String firstName) {
@@ -39,21 +39,19 @@ public class Customer {
     public void setSocSecurityNum(String socSecurityNum) {
         this.socSecurityNum = socSecurityNum;
     }
-    public void setBillingAddress(String billingAddress) {
+    public void setBillingAddress(Address billingAddress) {
         this.billingAddress = billingAddress;
     }
-    public void setShippingAddress(String shippingAddress) {
+    public void setShippingAddress(Address shippingAddress) {
         this.shippingAddress = shippingAddress;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "[" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", socSecurityNum='" + socSecurityNum + '\'' +
-                ", billingAddress='" + billingAddress + '\'' +
-                ", shippingAddress='" + shippingAddress + '\'' +
-                '}';
+                ']';
     }
 }
