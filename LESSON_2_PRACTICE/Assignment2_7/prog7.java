@@ -1,5 +1,7 @@
 package D1;
 
+import Assignment2_2.RandomNumbers;
+
 public class prog7 {
     public static void main(String[] args) {
         int[] t = new int[8];

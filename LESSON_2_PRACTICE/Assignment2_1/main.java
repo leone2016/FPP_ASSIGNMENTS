@@ -4,7 +4,6 @@ import java.lang.foreign.AddressLayout;
 
 public class main {
     public static void main(String[] args) {
-
         //Address for chicago
         Address add3A = new Address("123 Michigan Ave", "Chicago", "IL", "60601");
         Address add3B = new Address("456 Wacker Dr", "Chicago", "IL", "60606");
