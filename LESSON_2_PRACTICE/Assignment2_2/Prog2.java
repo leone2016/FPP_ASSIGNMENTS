@@ -1,6 +1,6 @@
 package Assignment2_2;
 
-public class main {
+public class Prog2 {
     public static void main(String[] args) {
         int x = RandomNumbers.getRandomInt(1,9);
         int y = RandomNumbers.getRandomInt(3,14);
