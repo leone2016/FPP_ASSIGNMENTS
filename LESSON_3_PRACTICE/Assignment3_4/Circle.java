@@ -1,4 +1,4 @@
-package Prog3_4;
+package Assignment3_4;
 
 public final class Circle {
     private final double  radius;
