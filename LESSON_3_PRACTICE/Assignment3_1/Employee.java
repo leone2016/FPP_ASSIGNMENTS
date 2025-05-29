@@ -1,4 +1,4 @@
-package Assignment3_2;
+package Assignment3_1;
 
 import Assignment3_1.Util;
 
@@ -14,7 +14,7 @@ public class Employee {
 
 	// constructor
 	Employee(String name, String aNickName, double aSalary, int aYear,
-			int aMonth, int aDay) {
+             int aMonth, int aDay) {
 		this.name = name;
 		nickName = aNickName;
 		salary = aSalary;
@@ -22,7 +22,6 @@ public class Employee {
 		hireDay = LocalDate.of(aYear, aMonth, aDay);
 	}
 
-	// instance methods
 	public String getName() {
 		return name;
 	}
@@ -35,33 +34,16 @@ public class Employee {
 	public double getSalary() {
 		return salary;
 	}
-	// needs to be improved
+
 	public LocalDate getHireDay() {
 		return hireDay;
 	}
+
 	public void raiseSalary(double byPercent) {
 		double raise = salary * byPercent / 100;
 		salary += raise;
 	}
-/*	public void createNewChecking(double startAmount) {
-// implement
-	}
-	public void createNewSavings(double startAmount) {
-// implement
-	}
-	public void createNewRetirement(double startAmount) {
-// implement
-	}
-	public void deposit(AccountType acctType, double amt){
-// implement
-	}
-	public boolean withdraw(AccountType acctType, double amt){
-// implement
-	}*/
-	public String getFormattedAcctInfo() {
-// implement
-		return null;
-	}
+
 	private String format = "name = %s, salary = %.2f, hireDay = %s";
 	
 	public String toString() {
