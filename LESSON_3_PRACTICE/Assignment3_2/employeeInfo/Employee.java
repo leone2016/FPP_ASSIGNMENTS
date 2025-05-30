@@ -25,15 +25,15 @@ public class Employee {
 		return hireDay;
 	}
 	public void createNewChecking(double startAmount) {
-		checkingAcct = new Account( AccountType.CHECKING, startAmount);
+		checkingAcct = new Account(this, AccountType.CHECKING, startAmount);
 
 	}
 	public void createNewSavings(double startAmount) {
-		savingsAcct = new Account(AccountType.SAVINGS, startAmount);
+		savingsAcct = new Account(this, AccountType.SAVINGS, startAmount);
 
 	}
 	public void createNewRetirement(double startAmount) {
-		retirementAcct = new Account(AccountType.RETIREMENT, startAmount);
+		retirementAcct = new Account(this, AccountType.RETIREMENT, startAmount);
 	}
 	public void deposit(AccountType acctType, double amt){
 		switch (acctType) {
@@ -65,25 +65,25 @@ public class Employee {
 	public boolean withdraw(AccountType acctType, double amt){
 		switch (acctType) {
 			case CHECKING -> {
-				if (checkingAcct == null) {
+				if (checkingAcct == null)
 					throw new IllegalArgumentException("Checking account does not exist.");
-				} else {
+				 else
 					return checkingAcct.makeWithdrawal(amt);
-				}
+
 			}
 			case SAVINGS -> {
-				if (savingsAcct == null) {
+				if (savingsAcct == null)
 					throw new IllegalArgumentException("Savings account does not exist.");
-				} else {
+				 else
 					return savingsAcct.makeWithdrawal(amt);
-				}
+
 			}
 			case RETIREMENT -> {
-				if (retirementAcct == null) {
+				if (retirementAcct == null)
 					throw new IllegalArgumentException("Retirement account does not exist.");
-				} else {
+				 else
 					return retirementAcct.makeWithdrawal(amt);
-				}
+
 			}
 			default -> throw new IllegalArgumentException("Invalid account type.");
 		}
