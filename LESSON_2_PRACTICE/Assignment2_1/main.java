@@ -1,6 +1,5 @@
 package Assignment2_1;
 
-import java.lang.foreign.AddressLayout;
 
 public class main {
     public static void main(String[] args) {
