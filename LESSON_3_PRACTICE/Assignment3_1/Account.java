@@ -8,16 +8,16 @@ class Account {
 	public final static String RETIREMENT = AccountType.RETIREMENT.toString();;
 	private final static double DEFAULT_BALANCE = 0.0;
 	private double balance;
-	private String acctType;
+	private AccountType acctType;
 	private Employee employee;
 
-	Account(Employee emp, String acctType, double balance){
+	Account(Employee emp, AccountType acctType, double balance){
 		employee = emp;
 		this.acctType =acctType;
 		this.balance = balance;
 	}
 
-	Account(Employee emp, String acctType){
+	Account(Employee emp, AccountType acctType){
 		this(emp,acctType,DEFAULT_BALANCE);
 	}
 	public String toString() {
@@ -50,7 +50,7 @@ class Account {
 	}
 
 	public String getAcctType() {
-		return acctType;
+		return acctType.toString();
 	}
 	public double getBalance() {
 		return balance;
