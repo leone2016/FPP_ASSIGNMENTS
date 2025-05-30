@@ -91,15 +91,15 @@ public class Employee {
 
 	public String getFormattedAcctInfo() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(String.format("ACCOUNT INFO FOR %s:\n\n", name));
+		sb.append(String.format("\n\nACCOUNT INFO FOR %s:\n", name));
 		if (checkingAcct != null) {
-			sb.append(String.format("Account type: %s\nCurrent bal: %.2f\n\n", "checking", checkingAcct.getBalance()));
+			sb.append(String.format("Account type: %s\nCurrent bal: %.2f\n", "checking", checkingAcct.getBalance()));
 		}
 		if (savingsAcct != null) {
-			sb.append(String.format("Account type: %s\nCurrent bal: %.2f\n\n", "savings", savingsAcct.getBalance()));
+			sb.append(String.format("Account type: %s\nCurrent bal: %.2f\n", "savings", savingsAcct.getBalance()));
 		}
 		if (retirementAcct != null) {
-			sb.append(String.format("Account type: %s\nCurrent bal: %.2f\n\n", "retirement", retirementAcct.getBalance()));
+			sb.append(String.format("Account type: %s\nCurrent bal: %.2f\n", "retirement", retirementAcct.getBalance()));
 		}
 		return sb.toString();
 	}
