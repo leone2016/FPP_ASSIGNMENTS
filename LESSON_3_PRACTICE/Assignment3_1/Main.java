@@ -18,9 +18,9 @@ public class Main {
         System.out.println("Employee: " + employee);
 
         // Create accounts for the employee
-        Account checkingAccount = new Account(employee, AccountType.CHECKING.toString(), 300);
-        Account savingsAccount = new Account(employee, AccountType.SAVINGS.toString(), 300);
-        Account retirementAccount = new Account(employee, AccountType.RETIREMENT.toString(), 300);
+        Account checkingAccount = new Account(employee, AccountType.CHECKING, 300);
+        Account savingsAccount = new Account(employee, AccountType.SAVINGS, 300);
+        Account retirementAccount = new Account(employee, AccountType.RETIREMENT, 300);
 
         // Print account details
         System.out.println("Checking Account: " + checkingAccount);

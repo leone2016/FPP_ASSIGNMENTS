@@ -53,16 +53,17 @@ public class Employee {
     }
 
     public void createNewChecking(double startAmount) {
-        checkingAcct = new Account(this, Account.CHECKING, startAmount);
+        checkingAcct = new Account(this, AccountType.CHECKING, startAmount);
     }
 
     public void createNewSavings(double startAmount) {
-        savingsAcct = new Account(this, Account.CHECKING, startAmount);
+        savingsAcct = new Account(this, AccountType.SAVINGS, startAmount);
     }
 
     public void createNewRetirement(double startAmount) {
-        retirementAcct = new Account(this, Account.CHECKING, startAmount);
+        retirementAcct = new Account(this, AccountType.RETIREMENT, startAmount);
     }
+
 
     public void deposit(AccountType acctType, double amt) {
         switch (acctType) {

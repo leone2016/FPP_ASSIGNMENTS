@@ -1,27 +1,26 @@
 package Assignment3_2;
 
 class Account {
-	public final static String CHECKING = AccountType.CHECKING.toString();
-	public final static String SAVINGS = AccountType.SAVINGS.toString();;
-	public final static String RETIREMENT = AccountType.RETIREMENT.toString();;
 	private final static double DEFAULT_BALANCE = 0.0;
 
 	private double balance;
-	private String acctType;
+	private AccountType acctType;
 	private Employee employee;
 
-	Account(Employee emp, String acctType, double balance) {
+	// Constructor
+	Account(Employee emp, AccountType acctType, double balance) {
 		employee = emp;
 		this.acctType = acctType;
 		this.balance = balance;
 	}
 
-	Account(Employee emp, String acctType) {
+	Account(Employee emp, AccountType acctType) {
 		this(emp, acctType, DEFAULT_BALANCE);
 	}
 
 	public String toString() {
-		return "type = " + acctType + ", balance = " + balance;
+		return "Account type: " + acctType.toString().toLowerCase() + "\n" +
+				"Current bal:  " + balance;
 	}
 
 	public void makeDeposit(double deposit) {
@@ -29,7 +28,10 @@ class Account {
 	}
 
 	public boolean makeWithdrawal(double amount) {
+		if (amount > balance) {
+			return false;
+		}
 		balance -= amount;
-		return false;
+		return true;
 	}
 }
