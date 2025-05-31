@@ -19,4 +19,8 @@ public Rectangle(double width, double length){
     public double computePerimeter(){
     return 2 * (width + length);
     }
+
+    public String toString(){
+    return "Rectangle";
+    }
 }

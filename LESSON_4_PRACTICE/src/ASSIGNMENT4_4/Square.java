@@ -19,4 +19,8 @@ public class Square extends ClosedCurve  implements Polygon {
         return 4 * (side);
     }
 
+    public String toString(){
+        return "Square";
+    }
+
 }

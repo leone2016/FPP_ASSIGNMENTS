@@ -86,4 +86,8 @@ public  class Triangle extends ClosedCurve  implements Polygon {
     public double computePerimeter(){
         return side1 + side2 + side3;
     }
+
+    public String toString(){
+        return "Triangle";
+    }
 }
