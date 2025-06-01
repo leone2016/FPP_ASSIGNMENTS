@@ -1,3 +1,5 @@
+## Assignment 2 - distribution
+
 | Name   |                                                              |
 | ------ | ------------------------------------------------------------ |
 | Leo    | [prog2-1_objects.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_2_DOC/prog2-1_objects.pdf)<br />[prog2-5_reverse.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_2_DOC/prog2-5_reverse.pdf) |
@@ -5,4 +7,12 @@
 | liya   | [prog2-3_round.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_2_DOC/prog2-3_round.pdf)<br />[prog2-7_format.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_2_DOC/prog2-7_format.pdf) |
 | Birhan | [prog2-4_parse.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_2_DOC/prog2-4_parse.pdf)<br />[prog2-8_min.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_2_DOC/prog2-8_min.pdf) |
 
-## 
+## Assignment 4 - distribution
+
+| Name   |                                                              |
+| ------ | ------------------------------------------------------------ |
+| Leo    | [prog4-1_department.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-1_department.pdf)<br />[prog4-6_equals.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-6_equals.pdf) |
+| Amine  | [prog4-3_improved_employee.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-3_improved_employee.pdf) |
+| liya   | [prog4-5_closed_curve3.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-5_closed_curve3.pdf) |
+| Birhan | [prog4-2_closed_curve.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-2_closed_curve.pdf)<br />[prog4-7_comparable.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-7_comparable.pdf) |
+
