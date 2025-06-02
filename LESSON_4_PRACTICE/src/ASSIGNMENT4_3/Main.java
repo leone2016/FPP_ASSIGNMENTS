@@ -22,6 +22,7 @@ public class Main {
         } else {
             System.out.println("Invalid choice.");
         }
+        sc.close();
     }
 
     static void initializeEmployees() {
@@ -53,16 +54,16 @@ public class Main {
         showEmployees();
         System.out.print("Select an employee: ");
         int empIndex = sc.nextInt();
-        sc.nextLine(); // clear
+        sc.nextLine();
 
         showAccounts(empIndex);
         System.out.print("Select an account: ");
         int accIndex = sc.nextInt();
-        sc.nextLine(); // clear
+        sc.nextLine();
 
         System.out.print("Deposit amount: ");
         double amount = sc.nextDouble();
-        sc.nextLine(); // clear
+        sc.nextLine();
 
         emps[empIndex].deposit(accIndex, amount);
         System.out.printf("$%.2f has been deposited in the %s account of %s.\n",
@@ -75,16 +76,16 @@ public class Main {
         showEmployees();
         System.out.print("Select an employee: ");
         int empIndex = sc.nextInt();
-        sc.nextLine(); // clear
+        sc.nextLine();
 
         showAccounts(empIndex);
         System.out.print("Select an account: ");
         int accIndex = sc.nextInt();
-        sc.nextLine(); // clear
+        sc.nextLine();
 
         System.out.print("Withdrawal amount: ");
         double amount = sc.nextDouble();
-        sc.nextLine(); // clear
+        sc.nextLine();
 
         boolean success = emps[empIndex].withdraw(accIndex, amount);
         if (success) {
