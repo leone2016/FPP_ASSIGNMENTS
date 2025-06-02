@@ -101,6 +101,7 @@ public class Main {
         for (int i = 0; i < emps.length; i++) {
             System.out.println(i + ". " + emps[i].getName());
         }
+
     }
 
     static void showAccounts(int empIndex) {
