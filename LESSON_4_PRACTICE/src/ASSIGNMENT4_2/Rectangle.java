@@ -1,8 +1,8 @@
 package ASSIGNMENT4_2;
 
 public final class Rectangle extends ClosedCurve{
-    private double width;
-    private double length;
+    private final double width;
+    private final double length;
 public Rectangle(double width,double length){
     this.width = width;
     this.length = length;
