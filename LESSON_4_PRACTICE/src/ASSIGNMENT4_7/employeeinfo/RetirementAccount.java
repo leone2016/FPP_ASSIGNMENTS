@@ -1,12 +1,12 @@
-package ASSIGNMENT4_7.employeeinfo;
+package LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo;
 
-public class RetirementAccount extends ASSIGNMENT4_7.employeeinfo.Account {
+public class RetirementAccount extends LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account {
 	private final double PENALTY_PERCENT = 2.0;
 
-	public RetirementAccount(ASSIGNMENT4_7.employeeinfo.Employee e, double startBalance){
+	public RetirementAccount(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee e, double startBalance){
 		super(e,startBalance);
 	}
-	public RetirementAccount(ASSIGNMENT4_7.employeeinfo.Employee e){
+	public RetirementAccount(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee e){
 		super(e);
 	}	
 	
@@ -21,8 +21,8 @@ public class RetirementAccount extends ASSIGNMENT4_7.employeeinfo.Account {
 		setBalance(bal);
 		return true;
 	}
-	public ASSIGNMENT4_7.employeeinfo.AccountType getAcctType(){
-		return ASSIGNMENT4_7.employeeinfo.AccountType.RETIREMENT;
+	public LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountType getAcctType(){
+		return LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountType.RETIREMENT;
 	}	
 
 }

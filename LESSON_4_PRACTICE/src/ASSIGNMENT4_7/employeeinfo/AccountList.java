@@ -1,19 +1,19 @@
-package ASSIGNMENT4_7.employeeinfo;
+package LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo;
 
 public class AccountList {
 	private final int INITIAL_LENGTH = 4;
-	private ASSIGNMENT4_7.employeeinfo.Account[] acctArray;
+	private LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[] acctArray;
 	private int size;
 	
 	public AccountList() {
-		acctArray = new ASSIGNMENT4_7.employeeinfo.Account[INITIAL_LENGTH];
-		acctArray = new ASSIGNMENT4_7.employeeinfo.Account[INITIAL_LENGTH];
-		acctArray = new ASSIGNMENT4_7.employeeinfo.Account[INITIAL_LENGTH];
+		acctArray = new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[INITIAL_LENGTH];
+		acctArray = new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[INITIAL_LENGTH];
+		acctArray = new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[INITIAL_LENGTH];
 		size = 0;
 	}
 	
-	public ASSIGNMENT4_7.employeeinfo.Account getLargest() {
-		ASSIGNMENT4_7.employeeinfo.Account largest = acctArray[0];
+	public LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account getLargest() {
+		LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account largest = acctArray[0];
 		for(int i = 1; i < size(); ++i) {
 			if(acctArray[i] != null && acctArray[i].getBalance() > largest.getBalance()) {
 				largest = acctArray[i];
@@ -22,31 +22,31 @@ public class AccountList {
 		return largest;
 	}
 	
-	public void add(ASSIGNMENT4_7.employeeinfo.Account s){
+	public void add(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account s){
 		if(size == acctArray.length) resize();
 		acctArray[size++] = s;
 	}
 	
-	public ASSIGNMENT4_7.employeeinfo.Account get(int i){
+	public LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account get(int i){
 		if(i < 0 || i >= size){
 			return null;
 		}
 		return acctArray[i];
 	}
 	
-	public boolean find(ASSIGNMENT4_7.employeeinfo.Account s){
-		for(ASSIGNMENT4_7.employeeinfo.Account test : acctArray){
+	public boolean find(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account s){
+		for(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account test : acctArray){
 			if(test.equals(s)) return true;
 		}
 		return false;
 	}
 	
-	public void insert(ASSIGNMENT4_7.employeeinfo.Account s, int pos){
+	public void insert(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account s, int pos){
 		if(pos > size) return;
 		if(pos >= acctArray.length||size+1 > acctArray.length) {
 			resize();
 		}
-		ASSIGNMENT4_7.employeeinfo.Account[] temp = new ASSIGNMENT4_7.employeeinfo.Account[acctArray.length+1];
+		LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[] temp = new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[acctArray.length+1];
 		System.arraycopy(acctArray,0,temp,0,pos);
 		temp[pos] = s;
 		
@@ -56,7 +56,7 @@ public class AccountList {
 		
 	}
 	
-	public boolean remove(ASSIGNMENT4_7.employeeinfo.Account s){
+	public boolean remove(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account s){
 		if(size == 0) return false;
 		int index = -1;
 		for(int i = 0; i < size; ++i ){
@@ -66,7 +66,7 @@ public class AccountList {
 			}
 		}
 		if(index==-1) return false;
-		ASSIGNMENT4_7.employeeinfo.Account[] temp = new ASSIGNMENT4_7.employeeinfo.Account[acctArray.length];
+		LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[] temp = new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[acctArray.length];
 		System.arraycopy(acctArray,0,temp,0,index);
 		System.arraycopy(acctArray,index+1,temp,index,acctArray.length-(index+1));
 		acctArray = temp;
@@ -79,7 +79,7 @@ public class AccountList {
 		System.out.println("resizing");
 		int len = acctArray.length;
 		int newlen = 2*len;
-		ASSIGNMENT4_7.employeeinfo.Account[] temp = new ASSIGNMENT4_7.employeeinfo.Account[newlen];
+		LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[] temp = new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account[newlen];
 		System.arraycopy(acctArray,0,temp,0,len);
 		acctArray = temp;
 	}

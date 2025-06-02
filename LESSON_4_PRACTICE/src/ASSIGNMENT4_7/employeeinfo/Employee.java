@@ -1,11 +1,11 @@
-package ASSIGNMENT4_7.employeeinfo;
-import ASSIGNMENT4_7.MyStringList;
+package LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo;
+import LESSON_4_PRACTICE.src.ASSIGNMENT4_7.MyStringList;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Employee implements Comparable<Employee>{ //implements Comparable<Employee> {
-	private ASSIGNMENT4_7.employeeinfo.AccountList accounts;
+	private LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountList accounts;
 	private String name;
 	private Date hireDate;
 	
@@ -13,7 +13,7 @@ public class Employee implements Comparable<Employee>{ //implements Comparable<E
 		this.name = name;
 		GregorianCalendar cal = new GregorianCalendar(year, month, day);
 		hireDate = cal.getTime();
-		accounts =  new ASSIGNMENT4_7.employeeinfo.AccountList();
+		accounts =  new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountList();
 	}
 	@Override
 	public int compareTo(Employee e) {
@@ -35,21 +35,21 @@ public class Employee implements Comparable<Employee>{ //implements Comparable<E
 	}
 	
 	public void createNewSavings(double startBalance){
-		accounts.add(new ASSIGNMENT4_7.employeeinfo.SavingsAccount(this,startBalance));
+		accounts.add(new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.SavingsAccount(this,startBalance));
 	}
 	public void createNewChecking(double startBalance){
-		accounts.add(new ASSIGNMENT4_7.employeeinfo.CheckingAccount(this,startBalance));
+		accounts.add(new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.CheckingAccount(this,startBalance));
 	}
 	public void createNewRetirement(double startBalance){
-		accounts.add(new ASSIGNMENT4_7.employeeinfo.RetirementAccount(this,startBalance));
+		accounts.add(new LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.RetirementAccount(this,startBalance));
 
 	}
 	public void deposit(int acctIndex, double amt){
-		ASSIGNMENT4_7.employeeinfo.Account selected = accounts.get(acctIndex);
+		LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account selected = accounts.get(acctIndex);
 		selected.makeDeposit(amt);
 	}
 	public boolean withdraw(int acctIndex, double amt){
-		ASSIGNMENT4_7.employeeinfo.Account selected = accounts.get(acctIndex);
+		LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account selected = accounts.get(acctIndex);
 		return selected.makeWithdrawal(amt);
 	}	
 	

@@ -1,4 +1,4 @@
-package ASSIGNMENT4_7.employeeinfo;
+package LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo;
 
 abstract public class Account implements Comparable<Account> {
 	private Employee emp;
