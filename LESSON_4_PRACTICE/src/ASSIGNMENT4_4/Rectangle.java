@@ -20,7 +20,5 @@ public Rectangle(double width, double length){
     return 2 * (width + length);
     }
 
-    public String toString(){
-    return "Rectangle";
-    }
+
 }

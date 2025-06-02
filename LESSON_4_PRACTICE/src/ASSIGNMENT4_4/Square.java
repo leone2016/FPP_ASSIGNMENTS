@@ -1,7 +1,7 @@
 package ASSIGNMENT4_4;
 import ASSIGNMENT4_4.good.Polygon;
 
-public class Square extends ClosedCurve  implements Polygon {
+public class Square extends ClosedCurve implements Polygon {
     private final double side;
 
     public Square(double side) {
@@ -19,8 +19,6 @@ public class Square extends ClosedCurve  implements Polygon {
         return 4 * (side);
     }
 
-    public String toString(){
-        return "Square";
-    }
+
 
 }

@@ -87,7 +87,4 @@ public  class Triangle extends ClosedCurve  implements Polygon {
         return side1 + side2 + side3;
     }
 
-    public String toString(){
-        return "Triangle";
-    }
 }
