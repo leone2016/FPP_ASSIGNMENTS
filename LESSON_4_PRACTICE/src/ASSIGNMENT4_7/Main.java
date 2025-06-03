@@ -1,6 +1,6 @@
-package ASSIGNMENT4_7;
+package LESSON_4_PRACTICE.src.ASSIGNMENT4_7;
 import java.util.Arrays;
-import ASSIGNMENT4_7.employeeinfo.Employee;
+import LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee;
 
 
 

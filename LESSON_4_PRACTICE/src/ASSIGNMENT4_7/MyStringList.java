@@ -1,4 +1,4 @@
-package ASSIGNMENT4_7;
+package LESSON_4_PRACTICE.src.ASSIGNMENT4_7;
 
 public class MyStringList {
     private final int INITIAL_LENGTH = 4;
