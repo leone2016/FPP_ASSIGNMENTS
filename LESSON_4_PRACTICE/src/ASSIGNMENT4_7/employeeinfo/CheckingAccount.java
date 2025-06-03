@@ -1,12 +1,12 @@
-package LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo;
+package ASSIGNMENT4_7.employeeinfo;
 
-public class CheckingAccount extends LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account {
+public class CheckingAccount extends Account {
 	private final double MONTHLY_SERVICE_CHARGE = 5.00;
 
-	public CheckingAccount(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee e, double startBalance){
+	public CheckingAccount(Employee e, double startBalance){
 		super(e,startBalance);
 	}
-	public CheckingAccount(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee e){
+	public CheckingAccount(Employee e){
 		super(e);
 	}
 	
@@ -14,8 +14,8 @@ public class CheckingAccount extends LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employe
 		double baseBalance = super.getBalance();
 		setBalance(baseBalance - MONTHLY_SERVICE_CHARGE);
 	}
-	public LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountType getAcctType(){
-		return LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountType.CHECKING;
+	public AccountType getAcctType(){
+		return AccountType.CHECKING;
 	}
 
 }

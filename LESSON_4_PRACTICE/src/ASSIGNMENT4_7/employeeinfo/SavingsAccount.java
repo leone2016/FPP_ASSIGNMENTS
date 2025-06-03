@@ -1,11 +1,11 @@
-package LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo;
+package ASSIGNMENT4_7.employeeinfo;
 
-public class SavingsAccount extends LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Account {
+public class SavingsAccount extends Account {
 	private final double MONTHLY_INTEREST_RATE = 0.25;
-	public SavingsAccount(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee e, double startBalance){
+	public SavingsAccount(Employee e, double startBalance){
 		super(e,startBalance);
 	}
-	public SavingsAccount(LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.Employee e){
+	public SavingsAccount(Employee e){
 		super(e);
 	}
 	
@@ -14,8 +14,8 @@ public class SavingsAccount extends LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employee
 		double interest = (MONTHLY_INTEREST_RATE/100) * baseBalance;
 		setBalance(baseBalance + interest);
 	}
-	public LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountType getAcctType(){
-		return LESSON_4_PRACTICE.src.ASSIGNMENT4_7.employeeinfo.AccountType.SAVINGS;
+	public AccountType getAcctType(){
+		return AccountType.SAVINGS;
 	}
 
 }
