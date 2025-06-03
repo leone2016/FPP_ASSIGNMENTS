@@ -1,17 +1,39 @@
 package ASSIGNMENT5_1;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * Things you should think about as you attempt to create this class:
+ * 1. How do you prevent users of your class from creating multiple instances? Why can't they
+ * just invoke the constructor of your class multiple times?
+ *
+ * RESPONSE: Declaring the constructor private, no other classes can instantiate MySingleton which means that it is not possible
+ *  to call multiple times.
+ *
+ *
+ * 2. If two clients attempt to access an instance of your class, how can you guarantee they will
+ * get the same instance?
+ *
+ * RESPONSE: By returning the same static final instance from getInstance().
+ *
+ * 3. How can you test your class to prove that it really is a Singleton?
+ *
+ * RESPONSE:
+ *
+ * Calling getInstance() from different references and checking if both references point to the same object using == or comparing hashcodes.
+ */
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //MySingleton s1 = new MySingleton();// has private access which is not possible instantiate
+        MySingleton s1 = MySingleton.getInstance();
+        MySingleton s2 = MySingleton.getInstance();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println("s1 hashCode"+ s1.hashCode());
+        System.out.println("s2 hashCode"+ s2.hashCode());
+
+        if (s1 == s2){
+            System.out.println("Both variables point to the same Singleton instance.");
+        }else {
+            System.out.println("Different instances exist — Singleton failed.");
         }
+
     }
 }
