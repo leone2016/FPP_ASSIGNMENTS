@@ -1,6 +1,6 @@
 package ASSIGNMENT5_3;
 
-public class Main {
+public class MainComparator {
     public static void main(String[] args) {
         String[] testStrings = {"apple", "dog", "banana", "cat", "a", "elephant"};
 
