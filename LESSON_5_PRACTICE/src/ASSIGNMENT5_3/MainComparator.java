@@ -6,6 +6,7 @@ public class Main {
 
         StringSort sorter = new StringSort(new StringLengthComparator());
         String[] sorted = sorter.stringSort(testStrings);
+        System.out.println("1. Sort array with Comparator");
 
         System.out.println("Sorted by length:");
         for (String s : sorted) {
