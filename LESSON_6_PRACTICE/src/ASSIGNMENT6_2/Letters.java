@@ -1,4 +1,4 @@
-package Lab6;
+package ASSIGNMENT6_2;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
