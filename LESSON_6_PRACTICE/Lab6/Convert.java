@@ -32,19 +32,28 @@ public class Convert extends JFrame {
         setSize(600,380);
         setLocationRelativeTo(null);
         setVisible(true);
+
         Convert.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
                 double mile = parseDouble(textField1.getText());
                 double kilometer = mile * 1.60934;
-                // 1 mile = 1.60934 km
-                //1 pound = 0.453592 kg
-                //1 gallon = 3.78541liter
-                //1 fahrenheit = -17.2222centigrade
-                textField5.setText(Double.toString(kilometer));
-            }
 
+                double pound = parseDouble(textField2.getText());
+                double kilogram = pound * 0.4535;
+
+                double gallon = parseDouble(textField3.getText());
+                double liter = gallon * 3.7854;
+
+                double fahrenheit = parseDouble(textField4.getText());
+                double centigrade = fahrenheit * -17.222;
+                textField5.setText(Double.toString(kilometer));
+                textField6.setText(Double.toString(kilogram));
+                textField7.setText(Double.toString(liter));
+                textField8.setText(Double.toString(centigrade));
+
+            }
 
         });
     }
