@@ -11,17 +11,17 @@ package QUIZZ1.q6;
  * This code is commented out to avoid compilation errors.
  */
 public class MyClass {
- /*   public static void main(String[] args) {
+/*    public static void main(String[] args) {
         new MyClass();
     }
-    private int value = 3;
+     private int value = 3;
     MyClass() {
         MyNestedClass c = new MyNestedClass();
         System.out.println(c.compute());
     }
     static class MyNestedClass {
         private int compute() {
-            return value;
+            return value;//❌ Compile error
         }
     }*/
 }
