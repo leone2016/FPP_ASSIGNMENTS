@@ -16,3 +16,12 @@
 | liya   | [prog4-5_closed_curve3.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-5_closed_curve3.pdf) |
 | Birhan | [prog4-2_closed_curve.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-2_closed_curve.pdf)<br />[prog4-7_comparable.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_4_DOC/prog4-7_comparable.pdf) |
 
+## Assignment 8 - distribution
+
+| Name   | LINK                                                         |
+| ------ | ------------------------------------------------------------ |
+| Leo    | [prog8-5_char_table.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_8_DOC/prog8-5_char_table.pdf) |
+| Amine  | [prog8-1_sort_search_arr.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_8_DOC/prog8-1_sort_search_arr.pdf) |
+| liya   | [prog8-3_comparator.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_8_DOC/prog8-3_comparator.pdf) |
+| Birhan | [prog8-2_doubly_linked.pdf](https://github.com/leone2016/FPP_ASSIGNMENTS/blob/main/LESSON_8_DOC/prog8-2_doubly_linked.pdf) |
+
