@@ -1,38 +1,53 @@
 import java.util.Arrays;
 
 /**
- Programming Assignment 7-4
- Write a recursive solution for reversing the given n elements of an array. Do not use auxiliary
- array to store the results. Work only with the given array to reverse. Think about the method
- signature and the arguments. If you want, you can have public utility method with and private
- recursive method. Inputs are not necessarily in sorted order.
- Before Reverse: [1, 3, 5, 7, 9, 13]
-
- After Reverse: [13, 9, 7, 5, 3, 1]
+ Programming Assignment 7-2
+ Here you will implement a recursive sorting routine, applied to the characters within an
+ input String. Name your class MinSort and your sorting method sort.
+ The recursive strategy for MinSort is: Given an input String s consisting only of
+ characters a-z do the following:
+ 1. Find the position minpos of the alphabetically least character in s
+ 2. Swap the character in position 0 with the character ch in position minpos
+ 3. Remove character ch from the string, store it, and call the remaining String t
+ 4. Sort t and place in storage to the right of the character ch
+ 5. Return the stored String.
+ For step 1 -- to find the position of a smallest character in the String – modify the code
+ given in Lesson 8 (slide 13).
+ Test your code in a main method using the input String
+ s = “zwxuabfkafutbbbb”
+ with these lines of code:
+ MinSort ms = new MinSort();
+ String result = ms.sort("zwxuabfkafutbbbb");
+ System.out.println(result);
  */
 public class Assignment7_2 {
 
-    static class Reverse{
-
-        private static int[] data( int[] x, int index){
-            if( index == 0 ){
-                return x;
-            }
-            int right = index-1;
-            int left = (x.length-1) - (index-1);
-            if(left > right) {
-                return x;
-            }
-            int temp = x[left];
-            x[left]  = x[right];
-            x[right]  = temp;
-            int test = "test".compareTo("tes");
-            return data(x, index -1);
+    public String sort(String s) {
+        if (s.length() == 0) {
+            return "";
         }
+        int minPos = minpos(s, 0, s.length() - 1);
+        char minChar = s.charAt(minPos);
+        String remaining = s.substring(0, minPos) + s.substring(minPos + 1);
+        return minChar + sort(remaining);
+    }
+
+    private int minpos(String s, int bottom, int top) {
+        if (bottom == top) {
+            return bottom; // Base case: only one character
+        }
+        int minIndex = bottom;
+        for (int i = bottom + 1; i <= top; i++) {
+            if (s.charAt(i) < s.charAt(minIndex)) {
+                minIndex = i;
+            }
+        }
+        return minIndex;
     }
 
     public static void main(String[] args) {
-        int res[] = Reverse.data(new int[]{1, 3, 5, 7, 9, 13}, 6);
-        System.out.println( ""+ Arrays.toString(res));
+        Assignment7_2 ms = new Assignment7_2();
+        String result = ms.sort("zwxuabfkafutbbbb");
+        System.out.println(result);
     }
 }
