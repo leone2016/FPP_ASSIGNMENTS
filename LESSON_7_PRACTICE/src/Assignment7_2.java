@@ -23,7 +23,7 @@ import java.util.Arrays;
 public class Assignment7_2 {
 
     public String sort(String s) {
-        if (s.length() == 0) {
+        if (s.isEmpty()) {
             return "";
         }
         int minPos = minpos(s, 0, s.length() - 1);
