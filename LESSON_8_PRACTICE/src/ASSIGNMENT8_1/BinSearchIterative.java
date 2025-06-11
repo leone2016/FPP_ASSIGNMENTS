@@ -16,7 +16,7 @@ public class BinSearchIterative {
 			if(x == arr[mid]) return true;
 			if(x < arr[mid]) { //search left
 				upper = mid - 1; //lower is not changed
-			} else {   //x > arr[mid], search right
+		} else {   //	x > arr[mid], search right
 				lower = mid + 1;  //upper is not changed
 			}
 		}
