@@ -17,12 +17,22 @@ public class EmployeeSort {
 			 new Employee("Dave", 50000, 2000, 1, 3),
 			 new Employee("Richard", 45000, 2001, 2, 7)};
 		List<Employee> empList = Arrays.asList(empArray);
-		NameComparator nameComp = 
-			new NameComparator();
+		NameComparator nameComp = new NameComparator();
 		Collections.sort(empList, nameComp);
-		
-		System.out.println(empList);
-		
+		System.out.println("With NameComparator");
+		System.out.print(empList);
+		System.out.println("\n------------------------------------------");
+
+		SalaryComparator salComp = new SalaryComparator();
+		System.out.println("\nWith SalaryComparator");
+		Collections.sort(empList, salComp);
+		System.out.print(empList);
+		System.out.println("\n------------------------------------------");
+
+		HireDateComparator hireDateComp = new HireDateComparator();
+		System.out.println("\nWith HireDateComparator");
+		Collections.sort(empList, hireDateComp);
+		System.out.print(empList);
 	}
 
 }
