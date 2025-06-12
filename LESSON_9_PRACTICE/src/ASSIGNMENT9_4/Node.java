@@ -2,6 +2,7 @@ package prog9_4_startup;
 
 
 public class Node {
+	
 	String data;
 	Node next;
 	
