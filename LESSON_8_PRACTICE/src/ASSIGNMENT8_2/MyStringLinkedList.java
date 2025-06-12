@@ -168,18 +168,24 @@ public class MyStringLinkedList {
 	// Main method for testing all functionalities
 	public static void main(String[] args) {
 		var list = new MyStringLinkedList();
+
 		list.addLast("Rich");
 		System.out.println(list);
+
 		list.removeLast();
 		System.out.println(list);
+
 		list.addFirst("Bob");
 		list.addFirst("Harry");
 		list.addFirst("Steve");
 		System.out.println(list);
+
 		list.removeLast();
 		System.out.println(list);
+
 		System.out.println("search(Harry): " + list.search("Harry"));
 		System.out.println("search(Bob): " + list.search("Bob"));
+
 		list.addLast("Tom");
 		System.out.println(list);
 		System.out.println("Inserting element M at position 1");
