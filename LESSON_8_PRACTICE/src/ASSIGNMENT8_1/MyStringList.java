@@ -5,6 +5,20 @@ public class MyStringList {
     private String[] strArray;
     private int size;
 
+    public static void main(String[] args) {
+        String[] testArr = {"big", "small", "tall", "short", "round", "square", "enormous", "tiny", "gargantuan", "lilliputian", "numberless", "none", "vast", "miniscule"};
+        MyStringList list = new MyStringList();
+        for (int i = 0; i < testArr.length; ++i) {
+            list.add(testArr[i]);
+        }
+        list.minSort();
+        System.out.println("The list in sorted order:");
+        System.out.println(list.toString());
+        System.out.println();
+        System.out.println("\"number\" is in the list? " + list.binSearchIt("number"));
+        System.out.println("\"tiny\" is in the list? " + list.binSearchIt("tiny"));
+    }
+
     public MyStringList() {
         strArray = new String[INITIAL_LENGTH];
         size = 0;
@@ -133,18 +147,6 @@ public class MyStringList {
         return size;
     }
 
-    public static void main(String[] args) {
-        String[] testArr = {"big", "small", "tall", "short", "round", "square", "enormous", "tiny", "gargantuan", "lilliputian", "numberless", "none", "vast", "miniscule"};
-        MyStringList list = new MyStringList();
-        for (int i = 0; i < testArr.length; ++i) {
-            list.add(testArr[i]);
-        }
-        list.minSort();
-        System.out.println("The list in sorted order:");
-        System.out.println(list.toString());
-        System.out.println();
-        System.out.println("\"number\" is in the list? " + list.binSearchIt("number"));
-        System.out.println("\"tiny\" is in the list? " + list.binSearchIt("tiny"));
-    }
+
 
 }

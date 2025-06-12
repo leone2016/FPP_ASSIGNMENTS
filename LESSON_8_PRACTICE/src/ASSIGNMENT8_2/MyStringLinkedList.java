@@ -186,8 +186,6 @@ public class MyStringLinkedList {
 		list.insert("M", 1);
 		System.out.println(list);
 		System.out.println("Removing the first node: " + list.remove("Steve"));
-
-
 		// Sort test
 		System.out.println("\n-- Now testing sort() --");
 

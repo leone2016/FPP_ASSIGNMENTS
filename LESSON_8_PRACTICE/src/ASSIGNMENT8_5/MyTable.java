@@ -10,10 +10,11 @@ public class MyTable {
 	public String get(char c){
 		int index = c - 'a';
 		if (index >= 0 && index < 26 && entries[index] != null) {
-			return entries[index].str;
+			return entries[index].toString();
 		}
 		return null;
 	}
+
 	//adds to the table a pair (c, s) so that s can be looked up using c 
 	public void add(char c, String s) {
 		int index = c - 'a'; // get index 0–25
