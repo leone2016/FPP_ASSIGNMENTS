@@ -1,4 +1,4 @@
-package employeebst;
+package bst;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -13,24 +13,6 @@ public class MyBST {
 		root = null;
 	}
 
-	private BinaryNode root;
-
-
-	private static class BinaryNode {
-		Object element;
-		BinaryNode left;
-		BinaryNode right;
-
-		BinaryNode(Object theElement) {
-			this(theElement, null, null);
-		}
-
-		BinaryNode(Object element, BinaryNode lt, BinaryNode rt) {
-			this.element = element;
-			this.left = lt;
-			this.right = rt;
-		}
-	}
 
 	/**
 	 * Prints the values in the nodes of the tree in sorted order.
@@ -220,7 +202,7 @@ public class MyBST {
 		preOrder(root);
 	}
 
-	private void preOrder(BinaryNode t) {
+	private void preOrder(Node t) {
 		if (t != null) {
 			System.out.print(t.element + " ");
 			preOrder(t.left);
@@ -232,7 +214,7 @@ public class MyBST {
 		postOrder(root);
 	}
 
-	private void postOrder(BinaryNode t) {
+	private void postOrder(Node t) {
 		if (t != null) {
 			postOrder(t.left);
 			postOrder(t.right);

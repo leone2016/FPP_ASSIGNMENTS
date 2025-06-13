@@ -9,13 +9,17 @@ public class EmployeeDriver {
 	}
 	public EmployeeDriver() {
 		NameComparator nameComp = new NameComparator();
-		/* uncomment when you have created EmployeeBST
+		//uncomment when you have created EmployeeBST
 		EmployeeBST bst = new EmployeeBST(nameComp);
-		bst.insert(new Employee("George", 40000, 1996,11,5));
-		bst.insert(new Employee("Dave", 50000, 2000, 1, 3));
-		bst.insert(new Employee("Sally", 45000, 2001, 2, 7));
-		bst.insert(new Employee("Richard", 80000, 1986,3,23));
+		bst.insert(new Employee("George",
+				40000, 1996,11,5));
+		bst.insert(new Employee("Dave",
+				50000, 2000, 1, 3));
+		bst.insert(new Employee("Sally",
+				45000, 2001, 2, 7));
+		bst.insert(new Employee("Richard",
+				80000, 1986,3,23));
+		System.out.println("Empleados ordenados por nombre:");
 		bst.printTree();
-		*/
 	}
 }

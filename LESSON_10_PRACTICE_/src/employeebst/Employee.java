@@ -26,6 +26,7 @@ public class Employee {
 	public double getSalary() {
 		return salary;
 	}
+
 	public boolean equals(Object o){
 		final double SAL_TOLERANCE = 0.00000001;
 		if(o==null) return false;
