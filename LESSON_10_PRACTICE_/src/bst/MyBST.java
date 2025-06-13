@@ -13,6 +13,25 @@ public class MyBST {
 		root = null;
 	}
 
+	private BinaryNode root;
+
+
+	private static class BinaryNode {
+		Object element;
+		BinaryNode left;
+		BinaryNode right;
+
+		BinaryNode(Object theElement) {
+			this(theElement, null, null);
+		}
+
+		BinaryNode(Object element, BinaryNode lt, BinaryNode rt) {
+			this.element = element;
+			this.left = lt;
+			this.right = rt;
+		}
+	}
+
 	/**
 	 * Prints the values in the nodes of the tree in sorted order.
 	 */
@@ -196,4 +215,37 @@ public class MyBST {
 	        return true;
 	    }
 	}
+
+	public void preOrder() {
+		preOrder(root);
+	}
+
+	private void preOrder(BinaryNode t) {
+		if (t != null) {
+			System.out.print(t.element + " ");
+			preOrder(t.left);
+			preOrder(t.right);
+		}
+	}
+
+	public void postOrder() {
+		postOrder(root);
+	}
+
+	private void postOrder(BinaryNode t) {
+		if (t != null) {
+			postOrder(t.left);
+			postOrder(t.right);
+			System.out.print(t.element + " ");
+		}
+	}
+
+	public Object getRoot() {
+		return root != null ? root.element : null;
+	}
+
+	public boolean isEmpty() {
+		return root == null;
+	}
+
 }
