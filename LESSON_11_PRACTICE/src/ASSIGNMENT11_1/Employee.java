@@ -1,7 +1,6 @@
-package lesson11.lab1.hashApplication;
+package ASSIGNMENT11_1;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 public class Employee {
 	private String firstName;
