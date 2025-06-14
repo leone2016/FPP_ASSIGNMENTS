@@ -88,11 +88,11 @@ public class MyHashtable implements Iterable {
                 for (Object obj : table[i]) {
 
                     Entry oldEntry = (Entry) obj;
-                    int hashcode = oldEntry.key.hashCode();
-                    int newHash = hash(hashcode);
-                    if (tableTemp[newHash] == null) tableTemp[newHash] = new LinkedList();
+                    int index = hash(oldEntry.key.hashCode());
 
-                    tableTemp[newHash].add(oldEntry);
+                    if (tableTemp[index] == null) tableTemp[index] = new LinkedList();
+
+                    tableTemp[index].add(oldEntry);
 
                 }
 
