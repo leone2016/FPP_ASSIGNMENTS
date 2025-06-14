@@ -82,17 +82,22 @@ public class MyHashtable implements Iterable {
         LinkedList[] tableTemp = new LinkedList[newSize];
 
         for (int i = 0; i < tableSize; i++) {
+
             if (table[i] != null) {
+
                 for (Object obj : table[i]) {
+
                     Entry oldEntry = (Entry) obj;
                     int hashcode = oldEntry.key.hashCode();
-                    int newHash = Math.abs(hashcode % newSize);
-                    if (tableTemp[newHash] == null) {
-                        tableTemp[newHash] = new LinkedList();
-                    }
+                    int newHash = hash(hashcode);
+                    if (tableTemp[newHash] == null) tableTemp[newHash] = new LinkedList();
+
                     tableTemp[newHash].add(oldEntry);
+
                 }
+
             }
+
         }
 
         table = tableTemp;
