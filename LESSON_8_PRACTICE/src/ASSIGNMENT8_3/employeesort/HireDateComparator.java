@@ -9,15 +9,10 @@ public class HireDateComparator implements Comparator<Employee> {
         if (e1.getHireDate().compareTo(e2.getHireDate()) != 0) {
             return e1.getHireDate().compareTo(e2.getHireDate());
         }
-
-
-        if (e1.getName().compareTo(e2.getName()) != 0) {
+        else if (e1.getName().compareTo(e2.getName()) != 0) {
             return e1.getName().compareTo(e2.getName());
         }
 
-
-        if (e1.getSalary() < e2.getSalary()) return -1;
-        else if (e1.getSalary() > e2.getSalary()) return 1;
-        else return 0;
+        return Integer.compare(e1.getSalary(), e2.getSalary());
     }
 }

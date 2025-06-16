@@ -75,10 +75,8 @@ public class MyStringList {
 
     private void resize() {
         System.out.println("resizing");
-        int len = strArray.length;
-        int newlen = 2 * len;
-        String[] temp = new String[newlen];
-        System.arraycopy(strArray, 0, temp, 0, len);
+        String[] temp = new String[strArray.length * 2];
+        System.arraycopy(strArray, 0, temp, 0, strArray.length);
         strArray = temp;
     }
 
@@ -90,8 +88,6 @@ public class MyStringList {
         sb.append(strArray[size - 1]).append("]");
         return sb.toString();
     }
-
-
 
 
 }

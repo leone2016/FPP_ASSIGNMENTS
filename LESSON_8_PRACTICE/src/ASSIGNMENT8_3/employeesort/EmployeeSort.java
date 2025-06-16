@@ -1,6 +1,5 @@
 package ASSIGNMENT8_3.employeesort;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -34,6 +33,7 @@ public class EmployeeSort {
         HireDateComparator hireDateComp = new HireDateComparator();
         System.out.println("\nWith HireDateComparator");
         Collections.sort(empList, hireDateComp);
+
         System.out.print(empList);
     }
 
