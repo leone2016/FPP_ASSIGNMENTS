@@ -1,5 +1,7 @@
 package ASSIGNMENT8_1;
 
+import java.util.*;
+
 public class MyStringList {
     private final int INITIAL_LENGTH = 4;
     private String[] strArray;
@@ -85,7 +87,7 @@ public class MyStringList {
         for (int i = 0; i < size - 1; ++i) {
             sb.append(strArray[i]).append(", ");
         }
-        sb.append(strArray[size - 1]).append("]");
+         sb.append(strArray[size - 1]).append("]");
         return sb.toString();
     }
 

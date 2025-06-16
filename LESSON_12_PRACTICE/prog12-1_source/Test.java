@@ -1,5 +1,3 @@
-package prog7_2_soln.closedcurve.good;
-
 public class Test {
 	
 	public static void main(String[] args) {
