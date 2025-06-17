@@ -1,5 +1,3 @@
-package ASSIGNMENT12_1;
-
 public class Square extends ClosedCurve {
 	double side;
 

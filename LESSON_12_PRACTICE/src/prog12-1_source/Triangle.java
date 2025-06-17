@@ -1,5 +1,3 @@
-package ASSIGNMENT12_1;
-
 public class Triangle extends ClosedCurve {
 
 	double base;
