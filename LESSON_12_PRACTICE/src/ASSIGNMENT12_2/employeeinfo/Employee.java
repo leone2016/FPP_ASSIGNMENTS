@@ -1,6 +1,19 @@
+<<<<<<< HEAD:LESSON_12_PRACTICE/prog12-2_source/employeeinfo/Employee.java
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+=======
+package ASSIGNMENT12_2.employeeinfo;
+
+import ASSIGNMENT12_2.MyStringList;
+
+import java.util.Date;
+import java.util.GregorianCalendar;
+
+
+
+
+>>>>>>> 0a788d90b611e14cce8ebb1107be0d01fba88a17:LESSON_12_PRACTICE/src/ASSIGNMENT12_2/employeeinfo/Employee.java
 public class Employee {
 	private AccountList accounts;
 	private String name;

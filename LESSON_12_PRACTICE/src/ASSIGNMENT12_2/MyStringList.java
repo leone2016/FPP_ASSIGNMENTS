@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:LESSON_12_PRACTICE/src/ASSIGNMENT12_2/employeeinfo/MyStringList.java
 
+========
+package ASSIGNMENT12_2;
+>>>>>>>> 0a788d90b611e14cce8ebb1107be0d01fba88a17:LESSON_12_PRACTICE/src/ASSIGNMENT12_2/MyStringList.java
 
 public class MyStringList {
 	private final int INITIAL_LENGTH = 4;
