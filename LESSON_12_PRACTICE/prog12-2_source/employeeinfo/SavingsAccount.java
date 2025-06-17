@@ -1,5 +1,3 @@
-package lesson12.lab12_2.employeeinfo;
-
 public class SavingsAccount extends Account {
 	private final double MONTHLY_INTEREST_RATE = 0.25;
 	SavingsAccount(Employee e, double startBalance){

@@ -1,4 +1,4 @@
-package lesson12.lab12_2;
+
 
 public class MyStringList {
 	private final int INITIAL_LENGTH = 4;

@@ -1,9 +1,3 @@
-package lesson12.lab12_2.employeeinfo;
-
-
-
-
-
 public class AccountList {
 	private final int INITIAL_LENGTH = 4;
 	private Account[] acctArray; 

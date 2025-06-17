@@ -1,5 +1,3 @@
-package lesson12.lab12_2.employeeinfo;
-
 public class CheckingAccount extends Account {
 	private final double MONTHLY_SERVICE_CHARGE = 5.00;
 
