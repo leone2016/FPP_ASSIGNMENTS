@@ -19,6 +19,7 @@ public class MyStringList {
         System.out.println();
         System.out.println("\"number\" is in the list? " + list.binSearchIt("number"));
         System.out.println("\"tiny\" is in the list? " + list.binSearchIt("tiny"));
+        List<String> test = new ArrayList<>();
     }
 
     public MyStringList() {
