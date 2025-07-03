@@ -1,4 +1,4 @@
-## Assignment 2 - distribution  test
+## Assignment 2 - distribution  test 2
 
 | Name   |                                                              |
 | ------ | ------------------------------------------------------------ |
